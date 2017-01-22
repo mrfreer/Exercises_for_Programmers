@@ -39,7 +39,7 @@ public class RetirementCalendar {
         System.out.println("Enter desired retirement age:");
         int r = s.nextInt();
         while(r <= 0)
-        {
+        {//test
             System.out.println("Age must be over 0.");
             r = s.nextInt();
         }
