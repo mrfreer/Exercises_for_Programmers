@@ -32,7 +32,7 @@ public class RetirementCalendar {
         Scanner s = new Scanner(System.in);
         int c = s.nextInt();
         while(c <= 0)
-        {
+        { //what's happening
             System.out.println("Age must be over 0.");
             c = s.nextInt();
         }
