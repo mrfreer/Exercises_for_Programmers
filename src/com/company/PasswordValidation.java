@@ -23,7 +23,8 @@ public class PasswordValidation {
         String u_password = s.nextLine();
         checkInput(user, u_password);
     }
-
+//use BCrpyt? to encrypt the passwords?
+    //that would be a cool project!
     public boolean checkInput(String u, String p){
         while(map.containsKey(u)){
             if(map.get(u).equals(p)){
