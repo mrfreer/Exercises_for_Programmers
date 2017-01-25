@@ -3,26 +3,20 @@ package com.company;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 /**
  * Created by dfreer on 1/25/2017.
  */
 public class LargestNumbers {
-    HashSet<Integer> nums = new HashSet<>();
+    TreeSet<Integer> nums = new TreeSet<>();
 
     public LargestNumbers(){
 
     }
 
     public int getLargestNum(){
-        Object allNums[] = nums.toArray();
-        int largest = (int)allNums[0];
-        for(int i = 1; i < allNums.length; i++){
-            if((int)allNums[i] > largest)
-                largest = (int)allNums[i];
-        }
-        return largest;
-        //can I do this without changing the set into an array?
+        return nums.last();
     }
     public void getUserNums(){
         while(true){
