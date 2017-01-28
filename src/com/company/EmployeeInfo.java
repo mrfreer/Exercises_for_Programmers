@@ -53,9 +53,8 @@ public class EmployeeInfo {
             if(firstN.length() >= 2)
                 break;
         }
-
         while(true){
-            System.out.println("Enter the employee id:");
+            System.out.print("Enter the employee id ");
             System.out.println("Must have two letters, hyphen and four numbers.");
             System.out.println("Example: AB-1234");
             Pattern p = Pattern.compile(
@@ -64,7 +63,7 @@ public class EmployeeInfo {
             if(m.matches())
                 break;
         }
-
+        System.out.println("Enter zip code:");
         while(!s.hasNextInt()) s.next();
         zip = s.nextInt();
 
@@ -75,6 +74,7 @@ public class EmployeeInfo {
 
     public static void main(String[] args) {
         EmployeeInfo newE = new EmployeeInfo();
+        newE.readInput();
         EmployeeInfo newF = newE.makeEmp();
         System.out.println(newE);
         System.out.println(newF);
