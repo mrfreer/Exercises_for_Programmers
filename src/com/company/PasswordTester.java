@@ -44,7 +44,7 @@ public class PasswordTester {
             System.out.println("Strong password.");
         else if(specialCharacter && numNumbers >= 1 && pw.length() >= 8 && numLetters >= 1)
             System.out.println("Very strong password.");
-        else
+        else //test
             System.out.println("Weak password.");
         //instructions make this a bit unclear about how to deal with longer passwords...default weak?
     }
@@ -52,5 +52,6 @@ public class PasswordTester {
     public static void main(String[] args) {
         while(true)
             testPW();
+
     }
 }
