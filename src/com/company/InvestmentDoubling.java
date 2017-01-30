@@ -33,8 +33,6 @@ public class InvestmentDoubling {
                     JOptionPane.showMessageDialog(null, "Sorry. That's not a valid input.");
                     textFieldRateReturn.setText("");
                 }
-
-
             }
         });
     }
