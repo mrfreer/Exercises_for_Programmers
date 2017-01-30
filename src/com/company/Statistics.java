@@ -44,13 +44,35 @@ public class Statistics {
         return Math.sqrt((diffFromMean)/(allNumbers.size()-1));
     }
 
+    public double max(){
+        double largest = allNumbers.get(0);
+        for(int i = 1; i < allNumbers.size(); i++){
+            if(allNumbers.get(i) > largest){
+                largest = allNumbers.get(i);
+            }
+
+        }
+        return largest;
+    }
+
+    public double min(){
+        double smallest = allNumbers.get(0);
+        for(int i = 1; i < allNumbers.size(); i++){
+            if(allNumbers.get(i) < smallest){
+                smallest = allNumbers.get(i);
+            }
+
+        }
+        return smallest;
+    }
+
     public static void main(String[] args) {
         Statistics s = new Statistics();
         s.readIn();
-
+        System.out.println("Maximum " + s.max());
+        System.out.println("Minimum " + s.min());
         System.out.println(s.computeAverage());
         System.out.println(s.stdDev());
-
     }
 
 }
