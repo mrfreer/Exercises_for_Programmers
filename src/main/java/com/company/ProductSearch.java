@@ -42,9 +42,15 @@ public class ProductSearch{
             System.out.println("Enter a product to search for:");
             Scanner s = new Scanner(System.in);
             String userInput = s.next();
+            boolean toFind = false;
             for(Product p : data){
-                if(p.name.equals(userInput))
+                if(p.name.equals(userInput)){
                     System.out.println("Match -" +p.toString());
+                    toFind = true;
+                }
+            }
+            if(toFind == false){
+                System.out.println("We're sorry.  We couldn't find that product.");
             }
             System.out.println("Enter quit to exit.");
             if(s.next().equalsIgnoreCase("quit"))
