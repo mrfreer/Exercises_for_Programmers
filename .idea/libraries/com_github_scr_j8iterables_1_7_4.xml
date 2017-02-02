@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.scr:j8iterables:1.7.4" type="repository">
+    <properties maven-id="com.github.scr:j8iterables:1.7.4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/scr/j8iterables/1.7.4/j8iterables-1.7.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
