@@ -42,6 +42,7 @@ public class ProductSearch{
         while(true){
             System.out.println("Enter a product to search for:");
             Scanner s = new Scanner(System.in);
+
             String userInput = s.next();
             boolean toFind = false;
             for(Product p : data){
