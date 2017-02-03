@@ -34,7 +34,7 @@ class AstronautData{
  */
 public class SpaceDirectory {
 
-    private static String readAll(Reader rd) throws IOException {
+    public static String readAll(Reader rd) throws IOException {
 
         BufferedReader reader = new BufferedReader(rd);
         StringBuilder sb = new StringBuilder();
