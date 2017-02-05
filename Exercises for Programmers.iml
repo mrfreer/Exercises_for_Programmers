@@ -26,5 +26,6 @@
     <orderEntry type="library" exported="" name="com.flickr4java:flickr4java:2.16" level="project" />
     <orderEntry type="library" exported="" name="se.mnord.scribe:scribe-java-bitbucket:1.0.0" level="project" />
     <orderEntry type="library" exported="" name="ant:ant-apache-log4j:1.6.5" level="project" />
+    <orderEntry type="library" exported="" name="com.firebase:firebase-client-jvm:2.5.2" level="project" />
   </component>
 </module>
